@@ -4,7 +4,11 @@
 #include <string.h>
 #include "readLine.h"
 #include "execCmds.h"
+
 #include "reverse.h"
+
+#include "sortArray.h"
+#include "tagRemove.h"
 
 // print the elements in the array, up to (but not including) the first
 // NULL entry
@@ -19,6 +23,9 @@ void printLines(char** a) {
 commandMap map[] = {
   {"-p", printLines},
   {"-r", reverse},
+  {"-s", sortArray},
+  {"-h", tagRemove},
+
   {NULL, NULL},
 };
 
