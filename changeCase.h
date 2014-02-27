@@ -1,0 +1,2 @@
+
+void changeCase(char** a);
