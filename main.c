@@ -6,6 +6,7 @@
 #include "execCmds.h"
 #include "encrypt.h"
 #include "decrypt.h"
+#include "reverse.h"
 #include "sortArray.h"
 #include "tagRemove.h"
 
@@ -24,8 +25,10 @@ commandMap map[] = {
   {"-p", printLines},
   {"-e", encrypt},
   {"-d", decrypt},
+  {"-r", reverse},
   {"-s", sortArray},
   {"-h", tagRemove},
+
   {NULL, NULL},
 };
 
