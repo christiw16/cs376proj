@@ -37,6 +37,8 @@ void tagRemove(char** a)
 		      a[k][j] = ' ';
 		    }
 		}
+	      tagStart = -1;
+	      tagEnd = -1;
 	    }
 
 	}
