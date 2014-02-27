@@ -6,9 +6,11 @@
 #include "execCmds.h"
 #include "changeCase.h"
 #include "reverseChar.h"
-
-void changeCase(char** a);
-void reverseChar(char** a);
+#include "encrypt.h"
+#include "decrypt.h"
+#include "reverse.h"
+#include "sortArray.h"
+#include "tagRemove.h"
 
 // print the elements in the array, up to (but not including) the first
 // NULL entry
@@ -24,6 +26,11 @@ commandMap map[] = {
   {"-p", printLines},
   {"-u", changeCase},
   {"-rr", reverseChar},
+  {"-e", encrypt},
+  {"-d", decrypt},
+  {"-r", reverse},
+  {"-s", sortArray},
+  {"-h", tagRemove},
   {NULL, NULL},
 };
 
