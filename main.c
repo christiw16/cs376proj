@@ -6,6 +6,9 @@
 #include "execCmds.h"
 #include "encrypt.h"
 #include "decrypt.h"
+#include "sortArray.h"
+#include "tagRemove.h"
+
 
 // print the elements in the array, up to (but not including) the first
 // NULL entry
@@ -21,6 +24,8 @@ commandMap map[] = {
   {"-p", printLines},
   {"-e", encrypt},
   {"-d", decrypt},
+  {"-s", sortArray},
+  {"-h", tagRemove},
   {NULL, NULL},
 };
 
